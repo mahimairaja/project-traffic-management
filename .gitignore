@@ -1,2 +1,7 @@
 .DS_Store
-
+tensorflow_object_counting_api
+env
+__pycache__
+firebase.py
+tensorflow_object_counting_api
+tensorflow_object_counting_api
