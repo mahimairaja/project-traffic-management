@@ -6,15 +6,21 @@
     <br><br><br><br>
     <br><br><br><br>
     <center>
-        <form action="#" method="post">
-            <label for="">Lane 1 : &nbsp;</label> 
-            <input type="text" name="lane1" id="lane1"><br>
-            <label for="">Lane 2 : &nbsp;</label> 
-            <input type="text" name="lane2" id="lane2">
-            <input type="submit" name="submit" id="">
-        </form>
+    <form action="{{ url_for("index")}}" method="post">
+        <label for="lane1">Lane 1:</label>
+        <input type="text" id="firstname" name="lane1" placeholder="lane1"><br>
+        <label for="lane2">Lane 2:</label>
+        <input type="text" id="lastname" name="lane2" placeholder="lane2"><br>
+        <label for="lane3">Lane 3:</label>
+        <input type="text" id="firstname" name="lane3" placeholder="lane3"><br>
+        <label for="lane4">Lane 4:</label>
+        <input type="text" id="lastname" name="lane4" placeholder="lane4"><br>
+        <button type="submit">Count</button>
     </center>
+
     <!-- 
+    // Camera Part 
+    
     <center><h1>Live Capture from UP<sup>2</sup> Extreme</h1>
         <hr>
     <div>
@@ -41,7 +47,7 @@
     </table>
     </center>
     -->
+    
     </body>
-
-
 </html>
+
