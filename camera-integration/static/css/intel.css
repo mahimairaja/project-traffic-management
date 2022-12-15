@@ -1,0 +1,237 @@
+
+.bg {
+    position: relative;
+    width: 100%;
+}
+
+.bg::before {
+    content: "";
+    background-image: url('img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+.navbar {
+    width: 100%;
+    
+    background-color: #000;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+  position: relative;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 25%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+   
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    /* background-color: #000; */
+   background-color: #555;
+}
+#lane-counts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+#img-div{
+    flex: 1;
+    background-color: rgba(6, 10, 45, 0.711);
+    height: 440px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border: 35px solid rgba(12, 15, 16, 0.693);
+    border-radius: 10px;
+    position: relative;
+}
+#road-img{
+    margin: 20px;
+    width: 600px;
+ 
+}
+#lanes{
+    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: rgba(6, 10, 45, 0.711);
+    height: 507px;
+    border: 35px solid rgba(12, 15, 16, 0.693);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+   right: 10px;
+   margin-left: 10px;
+}
+.countIn{
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    
+}
+
+.counts{
+    flex: 1;
+   
+}
+
+.red-btn{
+    background-color: rgb(225, 3, 3);
+}
+.yellow-btn{
+    background-color: yellow;
+}
+.green-btn{
+    background-color: green;
+}
+.traffic{
+    display: inline-block;
+}
+
+.highlight{
+    width: 80px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.54);
+    margin: 20px;
+    display: inline-block;
+}
+#highlight-1{
+    position: relative;
+    left: 299px;
+    bottom: 900px;
+    width: 90px;
+}
+#highlight-2{
+    position: relative;
+    left: 166px;
+    bottom: 665px;
+    width: 90px;
+}
+#highlight-3{
+    position: relative;
+    left: 202px;
+    bottom: 790px;
+    height: 74px;
+    width: 160px;
+}
+#highlight-4{
+    position: relative;
+    left: -389px;
+    bottom: 790px;
+    height: 74px;
+    width: 145px;
+}
+#signal{
+    position: relative;
+    left: 17px;
+    background-color: rgba(6, 10, 45, 0.711);
+    padding: 20px;
+    top: 20px;
+    border: 35px solid rgba(12, 15, 16, 0.637);
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    font-size: 18px;
+    color: white;
+    
+}
+#stats {
+    float: right;
+    position: relative;
+    background-color: rgba(6, 10, 45, 0.711);
+    padding: 20px;
+    border: 35px solid rgba(12, 15, 16, 0.637);
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    font-size: 18px;
+    color: white;
+    bottom: 534px;
+    margin-right: 10px;
+    text-align: center;
+}
+.num{
+    width: 25px;
+}
+#one{
+    position: relative;
+    bottom: 875px;
+    right: 308px;
+}
+#two{
+    position: relative;
+    bottom: 795px;
+    right: 335px;
+}
+#three{
+    position: relative;
+    bottom: 835px;
+    right: 295px;
+}
+#four{
+    position: relative;
+    bottom: 836px;
+    right: 464px;
+}
+#btn {
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    color: azure;
+    left: 350px;
+    width: 50px;
+}
+.btns {
+    width: 40px;
+    margin-right: 10px;
+    opacity: 0.4;
+
+}
+
+.button {
+    width: 37px;
+    height: 15px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#l1 {
+    position: relative;
+    left: 225px;
+}
+#l2{
+    position: relative;
+    left: 225px;
+    top: 118px;
+}
+#l3{
+    position: relative;
+    bottom: 45px;
+    left: 449px;
+}
+#l4{
+    position: relative;
+    bottom: 103px;
+}
