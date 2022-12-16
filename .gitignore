@@ -6,3 +6,6 @@ firebase.py
 user_list.db 
 auth_db
 live-graph
+datagen.py
+print.py
+thread.py
