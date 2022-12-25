@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg3096"
+    sodipodi:docname="Новый документ 4"
+    viewBox="0 0 500.11 500"
+    version="1.1"
+    inkscape:version="0.48.0 r9654"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="-4"
+      fit-margin-left="0"
+      pagecolor="#ffffff"
+      fit-margin-top="0"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.35"
+      inkscape:window-x="-4"
+      inkscape:window-height="904"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="682.76785"
+      inkscape:cy="336.26123"
+      fit-margin-right="0"
+      fit-margin-bottom="0"
+      inkscape:window-width="1280"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(307.77 -368.62)"
+    >
+    <g
+        id="g3115"
+        transform="matrix(.67992 0 0 .67992 -98.51 278.03)"
+      >
+      <g
+          id="g3079"
+          transform="translate(2751 -844.85)"
+        >
+        <path
+            id="path2832"
+            sodipodi:rx="337.14285"
+            sodipodi:ry="337.14285"
+            style="stroke:#ff0000;stroke-width:0.3;fill:#fede58"
+            sodipodi:type="arc"
+            d="m1340 946.65c0 186.2-150.94 337.14-337.14 337.14s-337.14-150.94-337.14-337.14 150.94-337.14 337.14-337.14 337.14 150.94 337.14 337.14z"
+            transform="matrix(1.0508 0 0 1.0508 -3744.8 351.02)"
+            sodipodi:cy="946.64789"
+            sodipodi:cx="1002.8571"
+        />
+        <path
+            id="path2834"
+            inkscape:connector-curvature="0"
+            sodipodi:nodetypes="cssssssssssssssssssccssssssssssc"
+            style="fill:#000000"
+            d="m-2714.2 1712.5c-34.685-3.4716-55-7.054-78.854-13.905-36.772-10.561-70.856-26.449-103.15-48.081-42.401-28.406-79.816-67.025-107.47-110.93-9.1532-14.531-25.099-46.721-31.436-63.461-10.378-27.416-17.907-58.348-21.785-89.501-2.23-17.917-2.4886-60.595-0.4727-78 10.233-88.349 45.458-162.39 106.12-223.05 60.662-60.662 134.7-95.887 223.05-106.12 17.405-2.0159 60.083-1.7572 78 0.47274 45.382 5.6483 83.551 17.086 123 36.857 35.816 17.951 62.633 36.88 90.391 63.804 13.622 13.213 29.609 30.819 29.609 32.607 0 0.6671 0.6359 1.4568 1.413 1.7551 1.8443 0.7077 11.942 14.159 21.663 28.858 28.962 43.793 48.978 96.494 56.333 148.31 2.3621 16.644 4.5918 42.38 4.5918 53 0 16.019-3.4239 48.928-7.1267 68.5-24.515 129.58-116.45 235.94-241.37 279.24-44.285 15.351-103.63 23.528-142.5 19.637zm64-33.336c39.048-5.0455 72.155-15.061 107.5-32.521 67.276-33.234 119.29-85.248 152.52-152.52 17.567-35.562 27.456-68.354 32.652-108.27 2.5004-19.21 2.4678-63.328-0.06-81.726-10.422-75.849-41.352-140.15-92.961-193.25-75.513-77.697-182.27-113.82-290.16-98.191-110.28 15.978-205.98 86.759-254.46 188.2-34.91 73.044-42.081 157.57-20.03 236.1 32.271 114.93 126.65 206.35 242.25 234.66 18.627 4.5624 32.629 6.8144 58.243 9.3676 9.2504 0.922 52.678-0.3259 64.5-1.8535z"
+        />
+      </g
+      >
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Awesome smile (template)</dc:title
+        >
+        <dc:date
+          >2011-04-03T12:37:11</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/130729/awesome-smile-template-by-rones</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >rones</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >awesome</rdf:li
+            >
+            <rdf:li
+              >meme</rdf:li
+            >
+            <rdf:li
+              >smile</rdf:li
+            >
+            <rdf:li
+              >template</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
