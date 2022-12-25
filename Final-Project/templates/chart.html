@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intel Project</title>
+    <link rel="stylesheet" href="static/css/intel.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/script/intel.js"></script>
+
+
+    <!-- JQuery links  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--High CHART LIVE  -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <style>
+        #data-container{
+            padding-left : 30px;
+            width: 550px;
+            height: 300px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="bg">
+        <div class="navbar">
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('index')}}">Dashboard</a>
+        </div>
+        <div>
+            
+        </div>
+        <div id="lane-counts">
+        <div id="img-div">
+            <img src="{{url_for('static', filename='images/road.png')}}" alt="" id="road-img" />
+        </div>
+        <div id="lanes">
+            <p>Vehicle Count</p>
+            <p class="counts">
+            Lane 1 &nbsp &nbsp<input
+                class="countIn"
+                type="text"
+                value="{{laneOne}}"
+                id="l-1"
+                readonly
+            />
+            </p>  
+            <p class="counts">
+            Lane 2 &nbsp &nbsp<input
+                class="countIn"
+                type="text"
+                value="0"
+                id="l-2"
+                readonly
+            />
+            </p>
+            <p class="counts">
+            Lane 3 &nbsp &nbsp<input
+                class="countIn"
+                type="text"
+                value="0"
+                id="l-3"
+                readonly
+            />
+            </p>
+            <p class="counts">
+            Lane 4 &nbsp &nbsp<input
+                class="countIn"
+                type="text"
+                value="0"
+                id="l-4"
+                readonly
+            />
+            </p>
+            <br />
+        </div>
+        </div>
+        <button id="btn" onclick="highlights()">click</button>
+
+        <div id="signal">
+        <p style="text-align: center">Signal Control</p>
+        <div id="l1">
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/red-btn.svg')}}" id="red" class="btns" alt="" />
+            <button onclick="blinkRed()" class="red-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/yellow-btn.svg')}}" id="yellow" class="btns" alt="" />
+            <button onclick="blinkYellow()" class="yellow-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/green-btn.svg')}}" id="green" class="btns" alt="" />
+            <button onclick="blinkGreen()" class="green-btn button"></button>
+            </div>
+        </div>
+        <div id="l2">
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/red-btn.svg')}}" id="red2" class="btns" alt="" />
+            <button onclick="blinkRed2()" class="red-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/yellow-btn.svg')}}" id="yellow2" class="btns" alt="" />
+            <button onclick="blinkYellow2()" class="yellow-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/green-btn.svg')}}" id="green2" class="btns" alt="" />
+            <button onclick="blinkGreen2()" class="green-btn button"></button>
+            </div>
+        </div>
+        <div id="l3">
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/red-btn.svg')}}" id="red3" class="btns" alt="" />
+            <button onclick="blinkRed3()" class="red-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/yellow-btn.svg')}}" id="yellow3" class="btns" alt="" />
+            <button onclick="blinkYellow3()" class="yellow-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/green-btn.svg')}}" id="green3" class="btns" alt="" />
+            <button onclick="blinkGreen3()" class="green-btn button"></button>
+            </div>
+        </div>
+        <div id="l4">
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/red-btn.svg')}}" id="red4" class="btns" alt="" />
+            <button onclick="blinkRed4()" class="red-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/yellow-btn.svg')}}" id="yellow4" class="btns" alt="" />
+            <button onclick="blinkYellow4()" class="yellow-btn button"></button>
+            </div>
+            <div class="traffic">
+            <img src="{{url_for('static', filename='svgs/green-btn.svg')}}" id="green4" class="btns" alt="" />
+            <button onclick="blinkGreen4()" class="green-btn button"></button>
+            </div>
+        </div>
+        </div>
+        <div id="highlight-1" class="highlight"></div>
+        <div id="highlight-2" class="highlight"></div>
+        <div id="highlight-3" class="highlight"></div>
+        <div id="highlight-4" class="highlight"></div>
+        <img src="{{url_for('static', filename='svgs/one.svg')}}" id="one" class="num" alt="" />
+        <img src="{{url_for('static', filename='svgs/two.svg')}}" id="two" class="num" alt="" />
+        <img src="{{url_for('static', filename='svgs/three.svg')}}" id="three" class="num" alt="" />
+        <img src="{{url_for('static', filename='svgs/four.svg')}}" id="four" class="num" alt="" />
+    </div>
+    <div id="stats">
+        <div class="container-fluid" id="data-container">
+        </div>
+    </div>
+
+    <script>
+        
+        var chart;
+        function requestData()
+        {
+            // For every 10 seconds data is fetched from backend
+            var requests = $.get('/data');
+            var tm = requests.done(function (result)
+            {
+                document.getElementById('l-1').value = result[0][1];
+                document.getElementById('l-2').value = result[1][1];
+                document.getElementById('l-3').value = result[2][1];
+                document.getElementById('l-4').value = result[3][1];
+
+                // Updating chart data 
+                var series1 = chart.series[0];
+                var series2 = chart.series[1];
+                var series3 = chart.series[2];
+                var series4 = chart.series[3];
+                    shift1 = series1.data.length > 4;
+                    shift2 = series2.data.length > 4;
+                    shift3 = series3.data.length > 4;
+                    shift4 = series4.data.length > 4;
+                // add the point
+                chart.series[0].addPoint(result[0], true, shift1);
+                chart.series[1].addPoint(result[1], true, shift2);
+                chart.series[2].addPoint(result[2], true, shift3);
+                chart.series[3].addPoint(result[3], true, shift4);
+                // call it again after one second
+                setTimeout(requestData, 10000);
+            });
+        }
+
+        $(document).ready(function() {
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'data-container',
+                    defaultSeriesType: 'spline',
+                    events: {
+                        load: requestData
+                    }
+                },
+                title: {
+                    text: 'Live Lane Detection Analysis'
+                },
+                time: {
+                    timezone: 'India/Kolkata'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    tickPixelInterval: 150,
+                    maxZoom: 3 ,
+                    labels: {
+                        formatter: function() {
+                            var dateNow = Date.now();
+                            var indDate = new Date((typeof dateNow === "string" ? new Date(dateNow) : dateNow).toLocaleString("en-US", {timeZone: "Asia/India"}));
+                        return Highcharts.dateFormat('%I:%M:%S', indDate);
+                        }
+                    }
+                },
+                yAxis: {
+                    minPadding: 0.2,
+                    maxPadding: 0.2,
+                    title: {
+                        text: 'Number of Cars',
+                        margin: 60
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'Lane 1',
+                    data: []
+                },
+                {
+                    name : 'Lane 2',
+                    data : []
+                },
+                {
+                    name : 'Lane 3',
+                    data : []
+                },
+                {
+                    name : 'Lane 4',
+                    data : []
+                },
+                ]
+            });
+        });
+        </script>
+    </body>
+</html>
