@@ -6,6 +6,7 @@ import pyrebase, time, pandas as pd, json, cv2
 from dotenv import load_dotenv as ld
 from os import environ
 from json import loads
+import sqlite3
 import threading
 
 app=Flask(__name__)
@@ -28,7 +29,10 @@ def index():
 # Enpoint that reads the last updated data in csv
 @app.route('/data', methods=["GET", "POST"])
 def data():
-    data = pd.read_csv('data/data.csv')
+    # data = pd.read_csv('data/data.csv')
+    db = sqlite3.connect('database/database.db')
+    data = pd.read_sql('select * from signal',db)
+    db.close()
     timeData = data['Time'].iloc[-1]  # Time data 
     y1 = int(data['lane_1'].iloc[-1]) # Lane 1 car count
     y2 = int(data['lane_2'].iloc[-1]) # Lane 2 car count
@@ -77,7 +81,10 @@ def video4():
 # Reads the csv and update the firebase for every 10 seconds
 def writeData():
     threading.Timer(10.0, writeData).start()  
-    data = pd.read_csv('data/data.csv')
+    # data = pd.read_csv('data/data.csv')
+    db = sqlite3.connect('database/database.db')
+    data = pd.read_sql('select * from signal',db)
+    db.close()
     curr_time = data['Time'].iloc[-1] # Time data
     y1 = int(data['lane_1'].iloc[-1]) # lane 1 car count 
     y2 = int(data['lane_2'].iloc[-1]) # Lane 2 car count 
