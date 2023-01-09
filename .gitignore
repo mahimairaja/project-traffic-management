@@ -11,3 +11,5 @@ thread.py
 practice
 database.db
 counter
+deployment/data.json
+deployment/datagen.py
