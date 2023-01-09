@@ -14,27 +14,30 @@ cursor = conn.cursor()
 
 # -- > Data generation into database 
 
-try :
-    while True :
-        x_value = time.strftime("%I:%M:%S", time.localtime())
-        total_1 = random.randint(15, 30)
-        total_2 = random.randint(15, 30)
-        total_3 = random.randint(15, 30)
-        total_4 = random.randint(15, 30)
-        query = f'''
-        insert into signal
-        values
-        ("{x_value}", {total_1},{total_2},{total_3},{total_4});
-        '''
-        cursor.execute(query)
-        conn.commit()
-        print(x_value, total_1, total_2, total_3, total_3)
-        time.sleep(10)
-except KeyboardInterrupt:
-    cursor.close()
-    conn.close()
-    print('Data Generator program ran successfully')
-    
+def write():
+    try :
+        while True :
+            x_value = time.strftime("%I:%M:%S", time.localtime())
+            total_1 = random.randint(15, 30)
+            total_2 = random.randint(15, 30)
+            total_3 = random.randint(15, 30)
+            total_4 = random.randint(15, 30)
+            query = f'''
+            insert into signal
+            values
+            ("{x_value}", {total_1},{total_2},{total_3},{total_4});
+            '''
+            cursor.execute(query)
+            conn.commit()
+            print(x_value, total_1, total_2, total_3, total_3)
+            time.sleep(10)
+    except KeyboardInterrupt:
+        cursor.close()
+        conn.close()
+        print('Data Generator program ran successfully')
+
+if __name__ == '__main__':
+    write()
     
 # -- > Same data generation with CSV
 
