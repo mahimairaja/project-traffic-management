@@ -8,8 +8,8 @@ videos
 yolov5
 demo.mp4
 writeAlgo.py
-writeDatabase.py
 run.sh
 retrive.py
 deployment/datagen.py
 camera.py
+deploymentRequirement/requirements.txt
