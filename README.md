@@ -42,16 +42,16 @@ The project demostrates the implementation of web-based analysis on a edge compu
 - Database - Firebase ( No-SQL ) in cloud , Sqlite ( RDBMS ) in edge
 
 ## ✅ Sample Output <a name = "output"></a>
-### Traffic density : 
-<img src=assets/density.gif>
+### Traffic density 🚥: 
+<img width=1000px height=400px src=assets/density.gif>
 <br><br>
 
-### Real-Time Graph : 
-<img src=assets/graph.gif>
+### Real-Time Graph 📊: 
+<img width=1000px height=400px src=assets/graph.gif>
 <br><br>
 
-### Local Database (RDBMS) : 
-<img src=assets/database.gif>
+### Local Database (RDBMS) 💾: 
+<img width=1000px height=400px src=assets/database.gif>
 <br><br>
 
 
@@ -156,13 +156,13 @@ To implement federated learning for continous updatation of the model with priva
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Honourable [Dr.Getzi Jeba]() mam has guided the project from the beginning to the end.
+- Honourable [Dr.Getzi Jeba](https://github.com/mahimairaja/project-traffic-control/) mam has guided the project from the beginning to the end.
 - The detection algorithm is inspired from YoloV5 and DeepSort.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [Mahimai Raja J](https://github.com/mahimai-raja) 
-- [Saran](#) 
-- [Karan](#) 
-- [Jemmimah](#) 
-- [Praveena](#)
+- [Mahimai Raja J](https://github.com/mahimairaja) 
+- [Saran](https://github.com/mahimairaja/project-traffic-control/) 
+- [Karan](https://github.com/mahimairaja/project-traffic-control/) 
+- [Jemmimah](https://github.com/mahimairaja/project-traffic-control/) 
+- [Praveena](https://github.com/mahimairaja/project-traffic-control/)
