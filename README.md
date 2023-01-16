@@ -23,6 +23,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [Achivements](#achivements)
 - [Sample Output](#output)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
@@ -35,14 +36,27 @@
 ## 🧐 About <a name = "about"></a>
 
 The project demostrates the implementation of web-based analysis on a edge computing system with a deep neural model running on it that can help us to undertand the pattern of traffic in that particular area. By the data collected by our algorithm we can significantly optimise the waiting time of vehicles in the traffic lanes.
+<br>
+
+## 🎖️ Achivements <a name = "achivements"></a>
+### Winning project of "**[Intel](https://www.intel.in/content/www/in/en/corporate/unnati/overview.html) Unnati Grand Challenge Winter 2022** " 
+### - One Lakhs Rupees ( $ 1200 ) 
+<br>
+
+## 📌 My Roles :
+- Software Lead
+- Backend developer
+<br>
 
 ## ⭐︎ My Contributions :
-- Backend - Flask and Jinja ( Python )
-- Front-end - J-query ( Data retrieval using AJAX ) 
-- Database - Firebase ( No-SQL ) in cloud , Sqlite ( RDBMS ) in edge
+1. Back-end - Flask and Jinja ( Python )
+2. Front-end - J-query ( Data retrieval using AJAX ) 
+3. Database - Firebase ( No-SQL ) in cloud , Sqlite ( RDBMS ) in edge.
+4. Integrated Back-end, Front-end and Yolo detection algorithm. 
+<br>
 
 ## ✅ Sample Output <a name = "output"></a>
-### Traffic density 🚥: 
+### Traffic density 🚘: 
 <img width=1000px height=400px src=assets/density.gif>
 <br><br>
 
@@ -156,7 +170,7 @@ To implement federated learning for continous updatation of the model with priva
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Honourable [Dr.Getzi Jeba](https://github.com/mahimairaja/project-traffic-control/) mam has guided the project from the beginning to the end.
+- Honourable Associate Professor [Dr.Getzi Jeba](https://github.com/mahimairaja/project-traffic-control/) mam has guided the project from the beginning to the end.
 - The detection algorithm is inspired from YoloV5 and DeepSort.
 
 ## ✍️ Authors <a name = "authors"></a>
