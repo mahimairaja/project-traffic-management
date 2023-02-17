@@ -30,8 +30,6 @@
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Future Vision](#future)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -166,17 +164,3 @@ To implement federated learning for continous updatation of the model with priva
 ```
 </details>
 <br>
-
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Honourable Associate Professor [Dr.Getzi Jeba](https://github.com/mahimairaja/project-traffic-control/) mam has guided the project from the beginning to the end.
-- The detection algorithm is inspired from YoloV5 and DeepSort.
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [Mahimai Raja J](https://github.com/mahimairaja) 
-- [Saran](https://github.com/mahimairaja/project-traffic-control/) 
-- [Karan](https://github.com/mahimairaja/project-traffic-control/) 
-- [Jemmimah](https://github.com/mahimairaja/project-traffic-control/) 
-- [Praveena](https://github.com/mahimairaja/project-traffic-control/)
