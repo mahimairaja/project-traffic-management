@@ -33,7 +33,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-The project demostrates the implementation of web-based analysis on a edge computing system with a deep neural model running on it that can help us to undertand the pattern of traffic in that particular area. By the data collected by our algorithm we can significantly optimise the waiting time of vehicles in the traffic lanes.
+The project demostrates the implementation of web-based analysis on a edge computing system with a deep neural model running on it that can help us to undertand the pattern of traffic in that particular area. By the data collected by our algorithm we can significantly optimise the waiting time of vehicles in the traffic lanes using <b>`Jetson Nano`</b>.
 <br>
 
 ## 🎖️ Achivements <a name = "achivements"></a>
