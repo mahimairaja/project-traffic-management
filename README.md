@@ -164,3 +164,14 @@ To implement federated learning for continous updatation of the model with priva
 ```
 </details>
 <br>
+
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+If you use any part of this code in your own projects, please provide attribution by citing this repository as follows:
+
+> Mahimai Raja J. *Traffic Management.* 2023. [GitHub repository](https://github.com/mahimairaja/project-traffic-management/)
+
+Thank you for respecting the `licensing terms` and providing proper attribution when using this code! :tada:
